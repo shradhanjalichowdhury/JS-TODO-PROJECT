@@ -1,0 +1,500 @@
+body{
+   background-color: gray;
+   overflow-x: hidden;
+   background-size: cover;
+
+   
+}
+#tasklist{
+  position: relative;
+  left: 250px; 
+   font-size: 42px;
+   color:black;
+   font-weight: bolder;
+}
+#list{
+   font-size: 38px;
+   font-weight: 300;
+   color:black;
+}
+#noitem{
+   position: absolute;
+   margin-top: 10px;
+   color: black;
+   left: 250px;
+   font-size: 35px;
+
+}
+.button1{
+display: flex;
+   width: 160px;
+   height: 60px;
+   font-size: 20px;
+   color:black;
+   border:3px solid rgb(13, 15, 16);
+   border-radius: 15px;
+   background-color: rgb(239, 12, 50);
+   font-weight: bolder;
+  margin-left:80vw;
+  margin-top: -3vw;
+  gap:8px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#plus{
+  position:relative;
+  width:30px;
+  height:30px;
+  font-size: 28px;
+  color:rgb(60, 12, 40);
+  border-radius: 50%;
+  border: 1px solid black;
+  text-align: center;
+  background-color: rgb(128, 152, 48);
+  margin: 5px;
+}
+
+
+.first{
+   filter: blur(10px);
+}
+.dropdown{
+ 
+   position: fixed;
+   height:140px;
+   width:280px;
+   left:45vw;
+   top:200px;
+   z-index: 1;
+   padding: 15px;
+   background-color: rgb(218, 225, 225);
+   border-radius: 15px;
+   display: none;
+   text-align: center;
+}
+.drop{
+   display: block;
+}
+#new{
+   margin-top: 10px;
+   font-size: 28px;
+}
+#cardnew{
+   width: 180px;
+   height: 30px;
+   font-size: 20px;
+   text-align: center;
+   border-radius: 5px;
+}
+#Add{
+   margin-top: 9px;
+   width: 80px;
+    margin: 8px;
+    border-radius: 5px;
+}
+#close{
+   margin-top: 4px;
+   width: 80px; 
+   border-radius: 5px;
+}
+#box{
+  margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:90px;
+    justify-content: space-between;
+
+}
+.conatiner_child{
+  
+    min-height: 340px;
+    width:300px;
+   border-radius: 15px;
+   background-color: rgb(134, 210, 29);
+   border:5px solid rgb(12, 13, 13) 
+
+}
+.hide{
+   display: none;
+}
+
+.btn4{
+  position: relative;
+  height: 25px;
+  width:50px;
+ color: black;
+ 
+ left:55%;
+ margin: 10px;
+}
+.btn3{
+  position: relative;
+  height: 25px;
+  width:50px;
+  left:55%;
+  color: rgb(202, 9, 9);
+}
+
+
+.dropdown2{
+ 
+  position: fixed;
+  height:140px;
+  width:260px;
+  left:40vw;
+  top:140px;
+  padding: 15px;
+  background-color: rgb(13, 163, 68);
+  border-radius: 15px;
+  display: none;
+  text-align: center;
+}
+#new2{
+  margin-top: 10px;
+  font-size: 28px;
+}
+#cardnew2{
+  width: 180px;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+.Add2{
+  margin-top: 9px;
+  width: 80px;
+   margin: 8px;
+   border-radius: 5px;
+   
+}
+.close2{
+  margin-top: 4px;
+  width: 80px; 
+  border-radius: 5px;
+}
+.inline{
+  
+ position: relative;
+  font-size: 20px;
+  gap:10px;
+ text-align: center;
+  align-items: baseline;
+}
+
+.space{
+  line-height:2px;
+}
+#center{
+  margin:auto;
+  width: 350px;
+  display: none;
+  margin-top: 5vw;
+  justify-content: center;
+}
+.backbutton{
+  margin-top: 75px;
+  color:black;
+  font-size: 3.5vw;
+}
+header{
+  display: flex;
+  height: 60px;
+  display: none;
+ justify-content: space-evenly;
+ gap:80px;
+ 
+}
+.blank{
+  position: absolute;
+  top:8vh;
+  left:48vw;
+  text-align: center;
+  font-size: 4.8vw;
+  color:black;
+
+}
+.delete{
+   background-image: url(./delete.png);
+  background-size: cover;
+  width:30px;
+  height:30px;
+  border:none;
+  outline: none;
+  border-radius: 50%;
+  margin-left: 30px;
+  margin-top: 6vh; 
+}
+.add1{
+   background-image: url(./Add\ .png);
+  background-size: cover;
+  width:30px;
+  height:30px;
+  border:none;
+  outline: none;
+  border-radius: 50%; 
+
+}
+.kuch{
+  height:170px;
+  overflow: auto;
+}
+
+
+@media screen and (min-width: 280px) and (max-width:600px){
+  body{
+     overflow-x: hidden;
+     overflow-y: scroll;
+     background-size: cover;
+
+  }
+  #tasklist{
+     position: relative;
+     width: 60vw;
+     left: 110px; 
+      font-size: 32px;
+     
+  }
+  #list{
+     font-size: 30px;
+   
+ }
+ #noitem{
+  position: absolute;
+  margin-top: 50px;
+  left: 50px;
+  font-size: 30px;
+  margin-top: 80px;
+  color:rgb(8, 10, 10);
+  
+
+}
+.button1{
+  margin-top: 20px;
+  margin-left:25vw;
+
+}
+.dropdown{
+ 
+  position: relative;
+  height:160px;
+  width:280px;
+  left:10vw;
+  top:120px;
+}
+.conatiner_child{
+  width: 250px;
+ margin-left: 50px;
+}
+.dropdown2{
+ 
+  position:fixed;
+  height:140px;
+  width:200px;
+  left:20vw;
+  top:170px;
+
+}
+.backbutton{
+  margin-top: 75px;
+  color:black;
+  font-size: 8.5vw;
+}
+.blank{
+  position: absolute;
+  top:20vw;
+  left:40vw;
+  color: black;
+  text-align: center;
+  font-size: 7.8vw;
+
+}
+.buttonfor{
+  margin-left: 240px;
+  margin-top: -50px;
+  width: 100px;
+  height: 50px;
+}
+#center{
+  margin-top: 120px;
+}
+}
+@media screen and (min-width: 620px) and (max-width:900px)
+{
+  body{
+     overflow-x: hidden;
+     overflow-y: scroll;
+     background-size: cover;
+  }
+  #tasklist{
+     position: relative;
+     width: 180px;
+     left: 50px; 
+      font-size: 32px;
+    
+  }
+  #list{
+     font-size: 30px;
+
+ }
+ #noitem{
+  position: absolute;
+  margin-top: 50px;
+  left: 50px;
+  font-size: 30px;
+  margin-top: 80px;
+
+
+}
+.button1{
+  margin-top: -60px;
+  margin-left:70vw;
+ 
+}
+.dropdown{
+ 
+  position: relative;
+  height:160px;
+  width:280px;
+  left:30vw;
+  top:120px;
+}
+#box{
+  margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:40px;
+    justify-content: space-evenly;
+
+}
+.conatiner_child{
+ margin-left: 20px;
+ width: 270px;
+}
+.dropdown2{
+ 
+  position: fixed;
+  height:140px;
+  width:250px;
+  left:40vw;
+  top:170px;
+
+}
+.backbutton{
+  margin-top: 75px;
+  color:black;
+  font-size: 8vw;
+}
+.blank{
+  position: absolute;
+  top:10vw;
+  left:42vw;
+  color: black;
+  text-align: center;
+  font-size: 7.8vw;
+
+}
+.buttonfor{
+  margin-left: 600px;
+  margin-top: -50px;
+  width: 100px;
+  height: 50px;
+}
+#center{
+  margin-top: 120px;
+}
+}
+@media screen and (max-width: 280px){
+  body{
+     overflow-x: hidden;
+     overflow-y: scroll;
+     background-size: cover;
+  }
+  #tasklist{
+     position: relative;
+     width: 180px;
+     left: 50px; 
+      font-size: 32px;
+
+  }
+  #list{
+     font-size: 30px;
+     
+ }
+ #noitem{
+  position: absolute;
+  margin-top: 50px;
+  left: 50px;
+  font-size: 30px;
+  margin-top: 80px;
+
+
+}
+.button1{
+  width: 150px;
+  margin-top: 30px;
+  margin-left:22vw;
+ 
+}
+.dropdown{
+ 
+  position: relative;
+  height:160px;
+  width:200px;
+  left:5vw;
+  top:120px;
+ 
+}
+#box{
+  margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:40px;
+    justify-content: space-evenly;
+  
+
+}
+.conatiner_child{
+ margin-left: 14px;
+ width: 270px;
+
+}
+.dropdown2{
+ 
+  position: fixed;
+  height:140px;
+  width:200px;
+  left:5vw;
+  top:170px;
+
+}
+.backbutton{
+  margin-top: 75px;
+  color:black;
+  font-size: 8vw;
+
+}
+.blank{
+  position: absolute;
+  top:10vw;
+  left:42vw;
+  color: black;
+  text-align: center;
+  font-size: 7.8vw;
+ 
+
+}
+.buttonfor{
+  position: relative;
+  margin-left: -80px;
+  margin-top: -50px;
+  width: 100px;
+  height: 50px;
+
+}
+#center{
+  margin-top: 120px;
+
+} 
+}
